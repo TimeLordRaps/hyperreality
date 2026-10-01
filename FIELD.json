@@ -1,0 +1,30 @@
+{
+  "field_id": "hyperreality",
+  "contract_version": "0.1.0",
+  "classification": "FRAME",
+  "module": "hyperreality",
+  "exports": [
+    "Kind",
+    "Presentation",
+    "Whole",
+    "Classification",
+    "Containment",
+    "Registry",
+    "DECLARED_KINDS",
+    "resolve_kind",
+    "instances_of_kind",
+    "classes_of",
+    "containers_of",
+    "members_of",
+    "well_founded"
+  ],
+  "scope": "What a reality is and which kinds of reality are declared: an open, unranked kind list, presentations of those kinds, and classification kept separate from containment.",
+  "exclusions": [
+    "No kind is ranked, ordered, or treated as more real than another.",
+    "No kind name is aliased to another; 'reality' is not silently 'base-reality'.",
+    "Whether sempiternality contains base-reality or a base-reality contains a sempiternality is not decided.",
+    "Observability belongs to Hyperspace and order to Hypertime; neither is defined here.",
+    "No physical, cosmological, or simulation claim is established."
+  ],
+  "verifier_status": "NOT_CHECKED"
+}
