@@ -99,3 +99,63 @@ certification.
 USER-STATED, in a session with the assistant: "And yes rename the object sempiternity and the property it holds sempiternality". The same session settled "universempiternity" for the object by the eternity pattern ("sempiternity is based off of eternity ideal").
 
 Effect here: where this repository describes the object that contains realities, it now writes **sempiternity** and **universempiternity**; the property or class is **sempiternality**, which is also the `class_name` a `Whole` carries (`Whole("s1", "sempiternality")` is an instance of that class). The quotations above keep the spelling Tyler used at the time. [OPEN] The universempiternality property by analogy (universempiternality) was not stated, and the same-day question of whether sempiternity is atemporal (his 2026-09-26 wording, as recorded in Hypertime) or unbounded in time is unresolved.
+
+[SUPERSEDED 2026-10-05, in scope: the same-day question in the preceding sentence about whether sempiternity is atemporal or unbounded in time was later answered by Tyler; see "2026-10-05: sempiternity is unbounded in time" below. The sentence is kept as written.]
+
+## Record of the 2026-10-04 and 2026-10-05 statements below
+
+The next sections record statements by Tyler Roost from Hyperstratum `wiki/hypermath-program.md` at commit `076c951af32315d2acf9f79d6b2aeef88f36561d`, on branch `claude/optimistic-einstein-3zorpo` (file SHA-256 `cfaf1ef557a3ae9d4f441c2325fcc44765edbe527da94c61addbfdd65c23f4cc`). That page is where the statements are preserved; the original messages are not held in this repository. Each blockquote is copied byte for byte from that page, and a script compared every added quotation with it. The wording around each quotation is the assistant's, and the tags are as in [FIELD_SPEC.md](FIELD_SPEC.md). The tests that check the structural claims are in `tests/`; they were ported from `incubator/hm-top/` in Hyperstratum.
+
+## 2026-10-04: the classification mirrored in reality classes
+
+USER-STATED:
+
+> this is perfectly reflected inside of reality classes, ie base:normal, surreality:surreal, areality:imaginary, rational and irrationality both existing in base:reality, and then sempiternality encompassing them as omega^omega, and meta-transfinite class objects composed of omega^omega objects are separable I believe into omega^omega class closing the top too like how universempiternality closes over sempiternality as the self-containing superclass
+
+Tyler names three kinds in this statement: base-reality, surreality and areality. Preality, oreality and hypergeometric reality are not mapped in it. The mapping is [HYPOTHETICAL]. Facts about its finite expression are in [FIELD_SPEC.md](FIELD_SPEC.md), "Reality classes".
+
+## 2026-10-04: sempiternity and its container, the physical picture, and an order
+
+USER-STATED, a question about bisimulation between sempiternity and its container universempiternity: whether it can be proved "if only one contains the other and itself". Only that fragment is a quotation; the question around it is recorded on the wiki page in the assistant's words.
+
+USER-STATED, the physical picture:
+
+> the natural infinite time singularity sheeted bubbles we can form in spacetime to give us both infinite space or finite space with infinite time, where inside we are running the prealities, that surreality inherits from through some imagination-reachable filter, and then below that is real / base reality holding together itself and allowing access to all higher order realities, we'll be able to read dreams, we're pretty close to that, so surreality will be accessible and architectable before preality, which makes sense following the hierarchy.
+
+USER-STATED, on order:
+
+> We have since established an order to the realities, hyperorder may be necessary to describe this in hyperreality idk.
+
+[HYPOTHETICAL] The physical picture is Tyler's proposal. Nothing here shows that such a bubble exists or can be formed.
+
+## 2026-10-05: naming, and S need not contain itself
+
+USER-STATED, the decision between the two spellings:
+
+> also are we going with universempiternity or universempiternality? likewise sempiternity or sempiternality? Up to me but I would say sempiternity is based off of eternity ideal, so we should probably go off of that.
+
+USER-STATED, on a condition for bisimilarity:
+
+> so if U contains U then S needs to contain S that doesnt feel right
+
+The first was answered by the object/property decision recorded under "Naming: object and property (2026-10-05)" above ("And yes rename the object sempiternity and the property it holds sempiternality"). The second is a condition that bisimilarity of S and U would impose; it is not a requirement of the model. See [FIELD_SPEC.md](FIELD_SPEC.md), "Whether S contains itself".
+
+## 2026-10-05: sempiternity is unbounded in time
+
+USER-STATED, in full as recorded:
+
+> sempiternity is unbounded in time, preality, surreality, and base-reality each have atemporal counterparts, surrealities atemporal counterpart is dream architecting while temporal surreality is first pov dreaming, atemporal preality is where the laws of our base-realities temporal and retrocausality exist in representable forms, otherwise our base reality is an instantiation at any one time of all the observable physical laws that we have for the most part found most of, but then in any unobservable physical laws our base-reality is locally generated following the unobservable preality collapse, think preality is our big bang with all timelines at this point in relative plank progressions in one giant superposition of one another, and being in this local bit of that probability mass is where we would find the unobservable physical laws, so there are some physical laws which are only determinable through finite volume residual extrapolative behavior prediction testing of potential prealities, so we basically have to test prealities until we find those unobservable directly physical laws, these can be thought of as seed physics, for example consciousness has an ability to operate across time forward and backward, so there is some degree of lack of causality and presence of bootstrapping that consciousness just naturally obeys, maybe the unobservable physical laws are more aptly called natural laws.
+>
+> I think its inherits upward and supports from underneath btw
+
+This answers the question left open under "Naming" above for sempiternity: it is unbounded in time. For universempiternity Tyler did not say. The 2026-09-26 wording above ("always existing outside eternity") stays as recorded; the wiki page reads any atemporal wording about sempiternity as applying, at most, to the atemporal counterparts named in the statement.
+
+[OPEN] "maybe the unobservable physical laws are more aptly called natural laws" is tentative naming by Tyler and is not adopted here.
+
+## 2026-10-05: anchoring preality, and a second naming usage
+
+USER-STATED:
+
+> preality "collapse" infers that preality is our quantum foundational state, akin to the bigbang up until now, and we need to real2sim anchor to it somehow to establish a proper preality, then with the infinite time singularity sheet bubble idea we can impact that computational simulation of preality into an infinite time with finite space which we can move in and out of it, and the infinite time preality is sempiternal at that point because we can use infinite time to run it backwards before the bigbang across all possible timelines that had to converge to this moment space, we gain a locked landmark point additional to the bigbang when the singularity sheet encompasses the infinite time finite space. We can call this the sempiternality, so the sempiternality would exist in our base reality or I guess outside of it, and we would when accessing inside of it be access sempiternity. Does that track
+
+[OPEN] Here "the sempiternality" names the anchored thing that exists in or outside a base-reality, and "sempiternity" what is accessed inside it. That differs from the convention above (object sempiternity, property sempiternality). One reading fits both: the sempiternality is the anchored enclosure itself, and the sempiternity is the interior object one enters. That reading is the assistant's, and Tyler has not confirmed it. This repository keeps the convention until he does.

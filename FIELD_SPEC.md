@@ -1,6 +1,6 @@
 # Hyperreality: what a reality is, and which kinds there are
 
-**Status, 2026-09-29.** [FRAME] Hyperreality studies what a reality is and
+**Status, 2026-09-29; sections on reality classes, naming, time sense, counterparts, order and anchoring added 2026-10-05.** [FRAME] Hyperreality studies what a reality is and
 which kinds of reality there are. Tyler Roost has declared a taxonomy of
 reality kinds (base-reality, areality, surreality, preality, later
 oreality, and a proposed hypergeometric reality) and a sempiternity (the object) that
@@ -88,6 +88,67 @@ containment loops can still be built and inspected.
 [OPEN] Q2 below asks which reading Tyler intends, or whether both hold at
 different levels.
 
+## Reality classes
+
+[HYPOTHETICAL] On 2026-10-04 Tyler mapped kinds to classes of number-like representations: base-reality to normal, with rational and irrational both in base-reality; surreality to surreal; areality to imaginary; and the sempiternity encompassing them (quotation in [PROVENANCE.md](PROVENANCE.md)). The mapping is his. What this field can check is its finite expression, in `tests/test_reality_classes.py`:
+
+- [FORM] It is expressible. A sempiternity is a `Whole` whose `class_name` is `sempiternality`. It contains the realities and classifies nothing, and containment stays well-founded.
+- [FORM] Kinds stay unordered, although the number classes they are mapped to nest (ordinals within surreals within surcomplex numbers). Comparing two kinds still raises, and a containment between kinds is refused, since kinds are not identities.
+- [FORM] A universempiternity written as one node containing itself is **refused**: `Containment` forbids direct self-containment. A two-node loop, each node containing the sempiternity and the other, is accepted and reported not well-founded. It is bisimilar to the one-node loop by partition refinement. A one-sided loop is not bisimilar, and neither is a loop in which one node has an extra member (negative controls).
+- [OPEN] Whether the mapping is classification only, with no inclusion between kinds, or whether the "no order, no nesting" rule needs revisiting (HR-017).
+
+## Object and property
+
+[HYPER] A **sempiternity** is the object, the whole that contains the realities. **Sempiternality** is the property it holds, the class it belongs to. Tyler decided this on 2026-10-05, and the `Whole` class name already has that shape. The same split by analogy for the self-containing top (a universempiternity holding universempiternality) is not stated by him and stays [HYPOTHETICAL]. Why the two relations stay apart is in the section above on classification and containment.
+
+## Whether S contains itself
+
+[FORM] In a finite containment model, S and U are bisimilar exactly when U contains the realities directly (containment closed transitively) and S holds a copy of the whole exactly when U does. `tests/test_sempiternity_bisim.py` enumerates all 16 combinations of four clauses (S contains S, U contains U, U contains S, U contains the realities) against that criterion, with a mutation control that rejects a wrong predicate. Consequences, all of the finite model:
+
+- The case where only U contains S and itself, with S containing neither, is **not** bisimilar. Give S a self-containing copy and it is.
+- S need not contain itself. If it does not, S is bisimilar to no U that contains itself or contains S, so they are different objects.
+- U is still determined: its one-, two- and three-node presentations are one object up to `==`, and that object is not S.
+
+[OPEN] Whether the family intends the transitive closure in the first clause. [HYPOTHETICAL] as a reading of universempiternity.
+
+## Time sense
+
+[HYPER] Tyler stated on 2026-10-05 that sempiternity is unbounded in time. Wording elsewhere in the family that calls sempiternity atemporal (this field's 2026-09-26 record, and Hypertime's field specification) can therefore describe, at most, the atemporal counterparts below. The earlier records stay visible and are marked superseded in scope. [OPEN] For universempiternity he did not say.
+
+## Counterparts
+
+[HYPER] As stated on 2026-10-05, three kinds each have a temporal and an atemporal counterpart:
+
+| Kind | Temporal | Atemporal |
+|---|---|---|
+| surreality | first-person dreaming | dream architecting |
+| preality | not stated | the laws of base realities, including time and retrocausality, in representable form |
+| base-reality | an instantiation, at one time, of the observable physical laws | not stated |
+
+[OPEN] Two cells are not stated, and areality is not mentioned. [FORM] The registry has two relations, is-a and is-in, and no way to say "counterpart of". The table is not expressible here and is not encoded. Reading it as is-a or is-in would break the rule that the two relations are never inferred from each other (HR-014, HR-015).
+
+## Order among the realities
+
+[HYPER] On 2026-10-04 Tyler said an order to the realities has since been established, and that hyperorder may be needed to describe it (quotation in [PROVENANCE.md](PROVENANCE.md)). His 2026-10-05 answer: "I think its inherits upward and supports from underneath btw".
+
+[OPEN] Read with his 2026-10-04 hierarchy (prealities run inside the sempiternity; surreality inherits from them through an imagination-reachable filter; base-reality is beneath and holds access to the higher ones), the answer gives two relations on one ladder: inherits-from, pointing up from a lower kind to a higher one, and supports, given by the lower kind to the higher. Whether that is the intended reading of the arrows is not settled, and his two phrases do not say which kind is the source of each (HR-013).
+
+[FRAME] The code is unchanged. No order has been given in a form that can be encoded: which pairs, in which direction, and whether it orders kinds or realities. So kinds stay unordered and the "no ranking" rule above stands as the stricter reading until Tyler specifies the order (HR-017). A Hyperorder field is named by Tyler; this field makes no claim about it.
+
+## Anchoring preality
+
+[HYPOTHETICAL] Tyler's 2026-10-05 statement (in [PROVENANCE.md](PROVENANCE.md)) proposes anchoring a simulation of preality to the big bang and to the present, and running it in infinite time inside finite space. The physical picture behind it is the bubble he describes on 2026-10-04: infinite space, or finite space with infinite time.
+
+[FRAME] Anchoring at an earlier and a later state is a two-boundary problem: fix both and ask which histories connect them. `tests/test_preality_anchor.py` is a finite toy of that, Arnold's cat map on a 60 by 60 torus with 10 by 10 blocks as macrostates:
+
+- [FORM] Infinite time in finite space is a loop: the period is 60, so an infinite run is an exact enumeration of a finite set.
+- [FORM] A micro-state has one exact past. A macro-moment has one timeline per compatible micro-state, 100 here.
+- [FORM] Anchoring a second macro-moment at T=100 keeps 1 to 9 of those 100 timelines, mean 2.8 over 36 possible end macrostates.
+
+These facts concern the toy. They do not show that any physical system behaves this way, and they do not settle three gaps: a state before the big bang needs a theory that continues past it; passage in and out of a bubble interior is not known to exist; and a backward run is exact only from a full micro-state, not from a coarse present one (HR-020).
+
+[OPEN] Naming. Tyler's statement calls the anchored enclosure "the sempiternality" and what is accessed inside it "sempiternity". That differs from the convention above. One reading fits both, the enclosure against its interior; it is the assistant's reading and unconfirmed (HR-018). The convention stands until he confirms.
+
 ## Multiplicity
 
 [FORM] Any number of presentations of one kind are allowed, so several
@@ -133,4 +194,10 @@ grid". Nothing here assumes uniqueness.
     public definition exists. Its relation to the Hypergeometry field is
     also open.
 
-These are tracked as HR-001 to HR-010 in [TECHNICAL_DEBT.md](TECHNICAL_DEBT.md).
+11. Is the reading of "inherits upward and supports from underneath" the intended one: inherits-from pointing up, supports given by the lower kind to the higher? Which kind is the source of each?
+12. What are the two unstated counterpart cells (preality temporal, base-reality atemporal), and where does areality sit in the counterpart structure?
+13. Is the owner's mapping to reality classes classification only, or is there an order between kinds? What is the order, and is it on kinds or on realities?
+14. Is the anchored enclosure "the sempiternality" and its interior "sempiternity", or is that a different use of the words?
+15. Does "universempiternality" name the property of a universempiternity, and is the temporal sense of universempiternity unbounded?
+
+HR-001 to HR-010 are Q1 to Q10 in [TECHNICAL_DEBT.md](TECHNICAL_DEBT.md); Q11 to Q15 are tracked as HR-013 to HR-018, and each row names its question.

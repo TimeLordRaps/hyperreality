@@ -29,6 +29,12 @@ question of direction: whether a sempiternity contains base-reality, or a
 base-reality contains a sempiternity. Both readings can hold of two
 distinct wholes. One whole in both roles is not well-founded.
 
+Further tests port the owner's mapping of kinds to reality classes, a
+bisimilarity check between a sempiternity and its container, and a finite
+toy of anchoring preality (see [FIELD_SPEC.md](FIELD_SPEC.md)). The owner's
+statement that an order to the realities exists is recorded, not encoded:
+the kinds stay unordered here until he specifies it.
+
 Reality as a situated slice belongs to
 [Hyperstratum](https://github.com/TimeLordRaps/hyperstratum). Observability
 belongs to [Hyperspace](https://github.com/TimeLordRaps/hyperspace), and

@@ -27,3 +27,20 @@ the paraphrases of the kinds elsewhere with citations:
 The rest of those files stays where it is. The sempiternity and sempiternality roles wait on
 Q3. Nothing in the oreality combination field moves; its realm glosses cite
 this field once this field has a commit.
+
+## 2026-10-05 update
+
+Added to `tests/`: `test_reality_classes.py`, `test_sempiternity_bisim.py`, `test_preality_anchor.py` and the helper `bisim_helper.py` (not a test module). They were ported from Hyperstratum `incubator/hm-top/`, with the negative and mutation controls kept. `hyperreality.py` and the `FIELD.json` exports are unchanged. `python3.12 validate.py` now runs 49 named tests, up from 13. Still bounded local code evidence.
+
+Recorded in [PROVENANCE.md](PROVENANCE.md) and [FIELD_SPEC.md](FIELD_SPEC.md): the reality-class mapping, the object/property naming, sempiternity unbounded in time, the counterpart table, the order answer, and preality anchoring. The statements are copied from a Hyperstratum wiki page pinned in PROVENANCE.md, not from the original messages.
+
+Tyler's pending decisions, each in [TECHNICAL_DEBT.md](TECHNICAL_DEBT.md):
+- the arrow reading of "inherits upward and supports from underneath" (HR-013);
+- the two blank counterpart cells and the unplaced areality (HR-015);
+- what the order is, and whether it is on kinds or realities, which decides whether the "no ranking" rule changes (HR-017);
+- enclosure against interior as the two naming usages (HR-018);
+- whether universempiternality is the property by analogy, and the temporal sense of universempiternity (HR-016).
+
+Not expressible today: a counterpart relation (only is-a and is-in exist, HR-014), and a one-node universempiternity (direct self-containment is refused, HR-016). Do not add either as a silent reading of an existing relation.
+
+Exact next action: ask Tyler Q11 to Q15 in [FIELD_SPEC.md](FIELD_SPEC.md). Encode nothing about order or counterparts before he answers.
