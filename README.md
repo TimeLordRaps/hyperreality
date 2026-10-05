@@ -1,28 +1,44 @@
 # Hyperreality
 
 **What a reality is, and which kinds of reality there are.** Tyler Roost /
-The TimeLord separates reality into kinds that have no ranking between them:
+The TimeLord orders the kinds by control: with each layer one must first gain
+control of the layers below it (his statement of 2026-10-05, in
+[PROVENANCE.md](PROVENANCE.md)). Lowest first:
 
-- base-reality, "N-d universal base reality";
-- areality, the abstract artificial reality;
-- surreality, the dream reality;
-- preality, the possibility reality;
-- oreality, which springs out from areality;
-- a proposed hypergeometric reality.
+1. **base-reality**, "N-d universal base reality".
+2. **surreality**, dream control: lucid and controllable dreamscapes.
+3. **areality**, artificial realities unobservably indifferent from a base
+   reality, which a person enters by mind linking, either consciously through
+   apparatus (like playing a character inside it while the body spends no
+   wall-clock time) or asynchronously by upload.
+4. **preality**, the possibility reality. It arises only when we try to link
+   into our own reality: an automatic research loop that manipulates base
+   reality from the linked simulation, where each manipulation teaches more of
+   the natural laws unobservable from base reality alone.
+5. **hypergeometric reality**, the proposed kind.
+6. **oreality**, the transfinite-dimensional reality that exists naturally as a
+   consequence of hypergeometric reality existing, around it or within it
+   (which of the two is open).
+7. **sempiternity**, the object that holds the property sempiternality;
+   unbounded in time.
+8. **universempiternity**, the superstructure: it contains all the kinds below
+   it, sempiternity, and itself.
 
-The list is open. He also names a sempiternity that is their container and the
-property it holds, sempiternality, that is their abstract class (his
-2026-09-26 statement used one word for both; see PROVENANCE.md, Naming). This repository is proposed as the family's home
-for those declarations. The kinds are declared today in Hyperethics, and
-whether that text moves here is open (Q4 in [FIELD_SPEC.md](FIELD_SPEC.md)).
-The taxonomy is [HYPER]; the finite reading is a [FRAME].
+The list is open. Oreality's older gloss, "springs out from areality", is the
+2026-09-23 statement and is superseded in its placement by the order above.
+The taxonomy is [HYPER]; the finite reading is a [FRAME]. The kinds were first
+declared in Hyperethics, and whether that text moves here is open (Q4 in
+[FIELD_SPEC.md](FIELD_SPEC.md)).
 
-The [finite Python frame](hyperreality.py) keeps three disciplines:
+The [finite Python frame](hyperreality.py) keeps these disciplines:
 
-- **No ranking.** Kinds cannot be compared or ordered.
+- **The order is a control prerequisite, not a degree of reality.** It is
+  `CONTROL_ORDER`, with `control_prerequisites` and `controlled_before`.
+  Comparing two `Kind` objects still raises, and there is no rank or degree.
 - **No silent aliasing.** `reality` is not quietly `base-reality`.
 - **Is-a and is-in stay apart.** Classifying a reality never places it in a
-  container, and containing a reality never classifies it.
+  container, and containing a reality never classifies it. The order is
+  neither.
 
 [Tests](tests/test_contract.py) include a finite witness on the open
 question of direction: whether a sempiternity contains base-reality, or a
@@ -31,9 +47,10 @@ distinct wholes. One whole in both roles is not well-founded.
 
 Further tests port the owner's mapping of kinds to reality classes, a
 bisimilarity check between a sempiternity and its container, and a finite
-toy of anchoring preality (see [FIELD_SPEC.md](FIELD_SPEC.md)). The owner's
-statement that an order to the realities exists is recorded, not encoded:
-the kinds stay unordered here until he specifies it.
+toy of anchoring preality (see [FIELD_SPEC.md](FIELD_SPEC.md)), and the
+control order ([tests](tests/test_control_order.py)). Which way his
+"inherits upward, supports from underneath" arrows point against this order is
+still open (HR-013).
 
 Reality as a situated slice belongs to
 [Hyperstratum](https://github.com/TimeLordRaps/hyperstratum). Observability

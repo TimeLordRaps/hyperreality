@@ -21,11 +21,13 @@ class KindDisciplineTests(unittest.TestCase):
         for name in ("base-reality", "areality", "surreality", "preality"):
             self.assertIn(name, names)
 
-    def test_kinds_carry_no_rank_or_order(self):
+    def test_kind_objects_do_not_compare_and_nothing_is_more_real(self):
+        # The owner's order (USER-STATED 2026-10-05) lives in CONTROL_ORDER, not in
+        # Python ordering on Kind, and is a control prerequisite, not a degree of reality.
         a, b = four_kinds()[:2]
         with self.assertRaises(TypeError):
             _ = a < b
-        for forbidden in ("rank", "order", "more_real", "degree"):
+        for forbidden in ("rank", "more_real", "degree"):
             self.assertFalse(hasattr(hyperreality, forbidden), forbidden)
 
     def test_kind_list_is_open(self):

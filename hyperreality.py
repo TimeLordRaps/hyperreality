@@ -1,10 +1,14 @@
 """Finite frame for what a reality is and which kinds of reality are declared.
 
 This module states kinds, presentations of those kinds, and two relations that
-are kept apart: classification (is-a) and containment (is-in). It does not
-rank kinds, does not alias one kind name to another, does not decide whether
-containment runs from sempiternity to reality or the other way, and does not
-define observability (that is Hyperspace's subject).
+are kept apart: classification (is-a) and containment (is-in). It also declares
+the owner's control order of the kinds (USER-STATED 2026-10-05): each layer is
+reached by first gaining control of the layers below it. That order is an
+explicit declaration, not Python ordering on Kind: comparing two Kind objects
+still raises, and the order says nothing about "more real". The module does not
+alias one kind name to another, does not decide whether containment runs from
+sempiternity to reality or the other way, and does not define observability
+(that is Hyperspace's subject).
 """
 
 from dataclasses import dataclass
@@ -39,7 +43,7 @@ def _bounded(items: object, cls: type, what: str) -> tuple:
 
 @dataclass(frozen=True)
 class Kind:
-    """A declared kind of reality. Kinds are unordered: comparing two raises."""
+    """A declared kind of reality. Comparing two Kind objects raises; the order is CONTROL_ORDER."""
     name: str
     gloss: str
     source: str
@@ -186,13 +190,55 @@ def well_founded(reg: Registry) -> bool:
 DECLARED_KINDS = (
     Kind("base-reality", "N-d universal base reality",
          "USER-STATED 2026-09-21; see PROVENANCE.md"),
-    Kind("areality", "abstract artificial reality; where thought, as a projection of a "
-         "constructed reality, is placed", "USER-STATED 2026-09-21; see PROVENANCE.md"),
-    Kind("surreality", "the dream reality", "USER-STATED 2026-09-21; see PROVENANCE.md"),
-    Kind("preality", "possibility reality", "USER-STATED 2026-09-21; see PROVENANCE.md"),
-    Kind("oreality", "springs out from areality", "USER-STATED 2026-09-23; "
-         "metamathethicology commit 846ce08; see PROVENANCE.md"),
-    Kind("hypergeometric-reality", "proposed further kind; not yet defined here",
-         "USER-PROPOSED as recorded in hyperobjectivity ed75d14 and "
-         "hypersubjectivity 1f7f8a7; see PROVENANCE.md"),
+    Kind("surreality", "the dream reality; dream control, e.g. lucid and controllable "
+         "dreamscapes", "USER-STATED 2026-09-21 and 2026-10-05; see PROVENANCE.md"),
+    Kind("areality", "abstract artificial reality, unobservably indifferent from base "
+         "reality, entered by mind linking (conscious, through apparatus, or "
+         "asynchronous, by upload); where thought, as a projection of a constructed "
+         "reality, is placed", "USER-STATED 2026-09-21 and 2026-10-05; see PROVENANCE.md"),
+    Kind("preality", "possibility reality; arises only when we try to link into our own "
+         "reality, through which unobservable natural laws are learned",
+         "USER-STATED 2026-09-21 and 2026-10-05; see PROVENANCE.md"),
+    Kind("hypergeometric-reality", "the hypergeometric reality; its existence has oreality "
+         "as a consequence", "USER-PROPOSED as recorded in hyperobjectivity ed75d14 and "
+         "hypersubjectivity 1f7f8a7; placed in the order USER-STATED 2026-10-05"),
+    Kind("oreality", "the transfinite-dimensional reality that naturally exists as a "
+         "consequence of the hypergeometric reality existing; around or within it",
+         "USER-STATED 2026-09-23 (metamathethicology commit 846ce08) and 2026-10-05; "
+         "see PROVENANCE.md"),
+    Kind("sempiternity", "the object that holds sempiternality; unbounded in time",
+         "USER-STATED 2026-09-26 and 2026-10-05; see PROVENANCE.md, Naming"),
+    Kind("universempiternity", "the superstructure of sempiternity: contains all kinds "
+         "below it, sempiternity, and itself", "USER-STATED 2026-10-04 and 2026-10-05; "
+         "see PROVENANCE.md, Naming"),
 )
+
+# The owner's order, lowest first (USER-STATED 2026-10-05). With each layer one must
+# first gain control of the layers below it. "Around or within" for oreality is open.
+CONTROL_ORDER = ("base-reality", "surreality", "areality", "preality",
+                 "hypergeometric-reality", "oreality", "sempiternity",
+                 "universempiternity")
+
+
+def control_position(name: str) -> int:
+    """Index of a kind in CONTROL_ORDER (0 is base-reality). KeyError if unplaced."""
+    try:
+        return CONTROL_ORDER.index(name)
+    except ValueError:
+        raise KeyError(f"kind {name!r} has no place in the control order") from None
+
+
+def control_prerequisites(name: str) -> tuple:
+    """Kinds whose control must be gained before this one, lowest first."""
+    return CONTROL_ORDER[:control_position(name)]
+
+
+def controlled_before(lower: str, higher: str) -> bool:
+    """True when control of `lower` is a prerequisite of reaching `higher`."""
+    return control_position(lower) < control_position(higher)
+
+
+def order_is_declared(kinds=DECLARED_KINDS) -> bool:
+    """True when CONTROL_ORDER lists every declared kind exactly once."""
+    names = [k.name for k in kinds]
+    return sorted(names) == sorted(CONTROL_ORDER) and len(set(CONTROL_ORDER)) == len(CONTROL_ORDER)

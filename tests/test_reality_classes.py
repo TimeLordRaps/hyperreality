@@ -60,7 +60,7 @@ class MappingIsExpressibleTests(unittest.TestCase):
         self.assertEqual(classes_of(reg, "r-rational"), frozenset())
 
 
-class KindsStayUnorderedTests(unittest.TestCase):
+class KindObjectsDoNotCompareTests(unittest.TestCase):
     def test_comparison_of_every_pair_raises(self):
         for a, b in ((BASE, SUR), (SUR, ARE), (BASE, ARE)):
             with self.assertRaises(TypeError):
@@ -68,8 +68,8 @@ class KindsStayUnorderedTests(unittest.TestCase):
             with self.assertRaises(TypeError):
                 _ = a >= b
 
-    def test_module_exports_no_order(self):
-        for forbidden in ("rank", "order", "more_real", "degree"):
+    def test_module_exports_no_rank_or_degree(self):
+        for forbidden in ("rank", "more_real", "degree"):
             self.assertFalse(hasattr(hyperreality, forbidden), forbidden)
 
     def test_number_classes_nesting_is_not_inclusion_between_kinds(self):

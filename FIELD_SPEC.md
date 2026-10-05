@@ -2,9 +2,9 @@
 
 **Status, 2026-09-29; sections on reality classes, naming, time sense, counterparts, order and anchoring added 2026-10-05.** [FRAME] Hyperreality studies what a reality is and
 which kinds of reality there are. Tyler Roost has declared a taxonomy of
-reality kinds (base-reality, areality, surreality, preality, later
-oreality, and a proposed hypergeometric reality) and a sempiternity (the object) that
-is their container, with the property it holds, sempiternality, as their class. This repository is
+reality kinds, ordered by control from the bottom: base-reality, surreality,
+areality, preality, hypergeometric reality, oreality, sempiternity, universempiternity (2026-10-05),
+and a sempiternity (the object) that is their container, with the property it holds, sempiternality, as their class. This repository is
 proposed as the family's home for those declarations, and it states the
 discipline they already carry. Whether the declaring text moves here is Q4.
 It does not settle the questions the declarations leave open. Tags: [HYPER]
@@ -42,9 +42,11 @@ It cites and does not restate:
 [FORM] The following hold of the kinds, and the tests check each one:
 
 - Kinds are pairwise distinct.
-- Kinds are **unordered**. Comparing two kinds raises an error, and the
-  module exports no rank, order, or degree. "Separate" is the whole of the
-  relation between kinds.
+- Kinds are ordered by **control** (2026-10-05, supersedes the 2026-09-21
+  "unordered" rule): `CONTROL_ORDER` lists them lowest first, and each layer
+  is reached by first gaining control of those below. The order is an explicit
+  declaration. Comparing two `Kind` objects still raises, and the module
+  exports no rank or degree: it is a prerequisite relation, not "more real".
 - The list is **open**. A registry may declare a further kind, with its own
   source, and it is accepted on equal terms.
 - A kind is resolved by **exact name only**. There is no alias table. In
@@ -93,7 +95,7 @@ different levels.
 [HYPOTHETICAL] On 2026-10-04 Tyler mapped kinds to classes of number-like representations: base-reality to normal, with rational and irrational both in base-reality; surreality to surreal; areality to imaginary; and the sempiternity encompassing them (quotation in [PROVENANCE.md](PROVENANCE.md)). The mapping is his. What this field can check is its finite expression, in `tests/test_reality_classes.py`:
 
 - [FORM] It is expressible. A sempiternity is a `Whole` whose `class_name` is `sempiternality`. It contains the realities and classifies nothing, and containment stays well-founded.
-- [FORM] Kinds stay unordered, although the number classes they are mapped to nest (ordinals within surreals within surcomplex numbers). Comparing two kinds still raises, and a containment between kinds is refused, since kinds are not identities.
+- [FORM] Kind objects stay non-comparable (the control order is separate, declared in `CONTROL_ORDER`), although the number classes they are mapped to nest (ordinals within surreals within surcomplex numbers). Comparing two kinds still raises, and a containment between kinds is refused, since kinds are not identities.
 - [FORM] A universempiternity written as one node containing itself is **refused**: `Containment` forbids direct self-containment. A two-node loop, each node containing the sempiternity and the other, is accepted and reported not well-founded. It is bisimilar to the one-node loop by partition refinement. A one-sided loop is not bisimilar, and neither is a loop in which one node has an extra member (negative controls).
 - [OPEN] Whether the mapping is classification only, with no inclusion between kinds, or whether the "no order, no nesting" rule needs revisiting (HR-017).
 
@@ -133,7 +135,7 @@ different levels.
 
 [OPEN] Read with his 2026-10-04 hierarchy (prealities run inside the sempiternity; surreality inherits from them through an imagination-reachable filter; base-reality is beneath and holds access to the higher ones), the answer gives two relations on one ladder: inherits-from, pointing up from a lower kind to a higher one, and supports, given by the lower kind to the higher. Whether that is the intended reading of the arrows is not settled, and his two phrases do not say which kind is the source of each (HR-013).
 
-[FRAME] The code is unchanged. No order has been given in a form that can be encoded: which pairs, in which direction, and whether it orders kinds or realities. So kinds stay unordered and the "no ranking" rule above stands as the stricter reading until Tyler specifies the order (HR-017). A Hyperorder field is named by Tyler; this field makes no claim about it.
+[FRAME] Superseded 2026-10-05: Tyler gave the order in encodable form, a control order on kinds (base-reality, surreality, areality, preality, hypergeometric reality, oreality, sempiternity, universempiternity), and it is encoded as `CONTROL_ORDER` with a strict-total-order test (HR-017). It is an order on kinds, as a prerequisite of control. A Hyperorder field is named by Tyler; this field makes no claim about it.
 
 ## Anchoring preality
 
@@ -190,9 +192,10 @@ grid". Nothing here assumes uniqueness.
 9. Another draft in the family uses "hyperreality" as a second name for
    universempiternity. Is universempiternity this field's subject, one
    subject within it, or a different thing that should keep its own name?
-10. What is hypergeometric reality? It is recorded as proposed, and no
-    public definition exists. Its relation to the Hypergeometry field is
-    also open.
+10. What is hypergeometric reality? It is placed in the order (2026-10-05)
+    and oreality is its consequence, but no public definition exists. Its
+    relation to the Hypergeometry field is also open. Is oreality around
+    hypergeometric reality or within it?
 
 11. Is the reading of "inherits upward and supports from underneath" the intended one: inherits-from pointing up, supports given by the lower kind to the higher? Which kind is the source of each?
 12. What are the two unstated counterpart cells (preality temporal, base-reality atemporal), and where does areality sit in the counterpart structure?

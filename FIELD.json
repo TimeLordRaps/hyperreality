@@ -16,16 +16,21 @@
     "classes_of",
     "containers_of",
     "members_of",
-    "well_founded"
+    "well_founded",
+    "CONTROL_ORDER",
+    "control_position",
+    "control_prerequisites",
+    "controlled_before",
+    "order_is_declared"
   ],
-  "scope": "What a reality is and which kinds of reality are declared: an open, unranked kind list, presentations of those kinds, and classification kept separate from containment.",
+  "scope": "What a reality is and which kinds of reality are declared: an open kind list in the owner's control order, presentations of those kinds, and classification kept separate from containment.",
   "exclusions": [
-    "No kind is ranked, ordered, or treated as more real than another.",
+    "No kind is treated as more real than another; the control order is a prerequisite of reaching a layer, not a degree of reality.",
     "No kind name is aliased to another; 'reality' is not silently 'base-reality'.",
     "Whether a sempiternity contains base-reality or a base-reality contains a sempiternity is not decided.",
     "Observability belongs to Hyperspace and order to Hypertime; neither is defined here.",
     "No physical, cosmological, or simulation claim is established.",
-    "The owner's statement that an order to the realities exists is recorded, not encoded; kinds stay unordered.",
+    "The owner's control order (2026-10-05) is encoded as CONTROL_ORDER; whether oreality is around or within hypergeometric reality, and the direction of the inherits/supports arrows, are open.",
     "No counterpart relation is expressed; the registry has only is-a and is-in.",
     "No physical, anchoring, or bubble claim is established; the cat-map toy checks a finite computation only."
   ],
