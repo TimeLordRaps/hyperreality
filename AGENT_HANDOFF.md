@@ -44,3 +44,7 @@ Tyler's pending decisions, each in [TECHNICAL_DEBT.md](TECHNICAL_DEBT.md):
 Not expressible today: a counterpart relation (only is-a and is-in exist, HR-014), and a one-node universempiternity (direct self-containment is refused, HR-016). Do not add either as a silent reading of an existing relation.
 
 Exact next action: ask Tyler Q11 to Q15 in [FIELD_SPEC.md](FIELD_SPEC.md). Encode nothing about order or counterparts before he answers.
+
+## 2026-10-05: control order encoded, README rewritten
+
+The owner stated the order of the kinds (base-reality, surreality, areality, preality, hypergeometric reality, oreality, sempiternity, universempiternity) with "each layer, first gain control of the layers below". Encoded as `CONTROL_ORDER`; `tests/test_control_order.py` checks the list, strict total order, prerequisites, and that the order is neither containment nor a degree. README, FIELD_SPEC, FIELD.json, HR-017 and PROVENANCE updated. The owner also allowed pushing to main on the hypers (not verifier, identifier, moderation or verifiable-finance, which stay under CI and review). Open: oreality around vs within hypergeometric reality; arrow direction (HR-013); the hypergeometric reality's definition. Exact next action: owner answers those three. `validate.py` needs Python 3.12; this run used pytest on Python 3 (57 passed) instead.
