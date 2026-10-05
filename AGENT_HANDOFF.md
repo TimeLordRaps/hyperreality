@@ -1,6 +1,6 @@
 # Local handoff
 
-Objective: give reality kinds and sempiternality one home in the family,
+Objective: give reality kinds and sempiternity one home in the family,
 citing Hyperstratum, Hyperspace, and Hypertime rather than restating them.
 Created 2026-09-29 from an empty path. [FIELD_SPEC.md](FIELD_SPEC.md) states
 the finite contract. [PROVENANCE.md](PROVENANCE.md) quotes each source.
@@ -19,11 +19,11 @@ Hyperethics source here, or move the kind declarations here and send
 the paraphrases of the kinds elsewhere with citations:
 - the first sentence of Hyperobjectivity's "Reality kinds" paragraph;
 - the first two sentences of Hypersubjectivity's "Five realities" paragraph;
-- the kinds and sempiternality sentences in Hyperstratum's reality-coherence
+- the kinds and sempiternity sentences in Hyperstratum's reality-coherence
   case, keeping its first sense, which is Hyperstratum's own definition;
 - the kind restatements in the Hyperstructure, Hypermechanics, Hyperdynamics
   and Hypertopology specs and in Hyperphysics' applications draft.
 
-The rest of those files stays where it is. The sempiternality roles wait on
+The rest of those files stays where it is. The sempiternity and sempiternality roles wait on
 Q3. Nothing in the oreality combination field moves; its realm glosses cite
 this field once this field has a commit.

@@ -57,7 +57,7 @@ and [Hypersubjectivity `1f7f8a7`](https://github.com/TimeLordRaps/hypersubjectiv
 No verbatim statement and no public definition were found, so it is listed
 by name only. See HR-010.
 
-## 2026-09-26: sempiternality
+## 2026-09-26: sempiternality (the object is now a sempiternity; see Naming)
 
 USER-STATED: sempiternality is "always existing outside eternity". Reality,
 surreality, preality, and areality integrate compositionally into it, and it
@@ -73,7 +73,7 @@ USER-STATED, as preserved in [Hyperspace](https://github.com/TimeLordRaps/hypers
 bunch of base realities in a grid…". Hyperspace owns that criterion, and
 this field cites it.
 
-## 2026-09-29: a sempiternality inside a base-reality
+## 2026-09-29: a sempiternity inside a base-reality
 
 USER-STATED, excerpted:
 
@@ -93,3 +93,9 @@ or configuration of conditions" is Hyperstratum's canonical definition, at
 
 The project makes no private-source claim and asserts no Verifier Standard
 certification.
+
+## Naming: object and property (2026-10-05)
+
+USER-STATED, in a session with the assistant: "And yes rename the object sempiternity and the property it holds sempiternality". The same session settled "universempiternity" for the object by the eternity pattern ("sempiternity is based off of eternity ideal").
+
+Effect here: where this repository describes the object that contains realities, it now writes **sempiternity** and **universempiternity**; the property or class is **sempiternality**, which is also the `class_name` a `Whole` carries (`Whole("s1", "sempiternality")` is an instance of that class). The quotations above keep the spelling Tyler used at the time. [OPEN] The universempiternality property by analogy (universempiternality) was not stated, and the same-day question of whether sempiternity is atemporal (his 2026-09-26 wording, as recorded in Hypertime) or unbounded in time is unresolved.

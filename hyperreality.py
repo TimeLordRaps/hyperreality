@@ -3,7 +3,7 @@
 This module states kinds, presentations of those kinds, and two relations that
 are kept apart: classification (is-a) and containment (is-in). It does not
 rank kinds, does not alias one kind name to another, does not decide whether
-containment runs from sempiternality to reality or the other way, and does not
+containment runs from sempiternity to reality or the other way, and does not
 define observability (that is Hyperspace's subject).
 """
 
@@ -64,7 +64,7 @@ class Presentation:
 @dataclass(frozen=True)
 class Whole:
     """An instance of a class that is not itself a declared kind, such as a
-    sempiternality used as a container."""
+    sempiternity (an instance of the class sempiternality) used as a container."""
     whole_id: str
     class_name: str
 

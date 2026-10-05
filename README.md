@@ -10,8 +10,9 @@ The TimeLord separates reality into kinds that have no ranking between them:
 - oreality, which springs out from areality;
 - a proposed hypergeometric reality.
 
-The list is open. He also names a sempiternality that is both their abstract
-class and their container. This repository is proposed as the family's home
+The list is open. He also names a sempiternity that is their container and the
+property it holds, sempiternality, that is their abstract class (his
+2026-09-26 statement used one word for both; see PROVENANCE.md, Naming). This repository is proposed as the family's home
 for those declarations. The kinds are declared today in Hyperethics, and
 whether that text moves here is open (Q4 in [FIELD_SPEC.md](FIELD_SPEC.md)).
 The taxonomy is [HYPER]; the finite reading is a [FRAME].
@@ -24,8 +25,8 @@ The [finite Python frame](hyperreality.py) keeps three disciplines:
   container, and containing a reality never classifies it.
 
 [Tests](tests/test_contract.py) include a finite witness on the open
-question of direction: whether sempiternality contains base-reality, or a
-base-reality contains a sempiternality. Both readings can hold of two
+question of direction: whether a sempiternity contains base-reality, or a
+base-reality contains a sempiternity. Both readings can hold of two
 distinct wholes. One whole in both roles is not well-founded.
 
 Reality as a situated slice belongs to

@@ -73,9 +73,9 @@ class TwoRelationTests(unittest.TestCase):
             Registry(self.kinds, self.people, (), containments=(Containment("b1", "b1"),))
 
 
-class SempiternalityDirectionTests(unittest.TestCase):
-    """09-26: sempiternality contains realities. 09-29: a base-reality contains
-    a sempiternality. The frame decides neither; it shows what each costs."""
+class SempiternityDirectionTests(unittest.TestCase):
+    """09-26: a sempiternity contains realities. 09-29: a base-reality contains
+    a sempiternity. The frame decides neither; it shows what each costs."""
 
     def setUp(self):
         self.kinds = four_kinds()

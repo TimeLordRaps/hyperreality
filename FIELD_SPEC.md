@@ -3,8 +3,8 @@
 **Status, 2026-09-29.** [FRAME] Hyperreality studies what a reality is and
 which kinds of reality there are. Tyler Roost has declared a taxonomy of
 reality kinds (base-reality, areality, surreality, preality, later
-oreality, and a proposed hypergeometric reality) and a sempiternality that
-relates to them both as a class and as a container. This repository is
+oreality, and a proposed hypergeometric reality) and a sempiternity (the object) that
+is their container, with the property it holds, sempiternality, as their class. This repository is
 proposed as the family's home for those declarations, and it states the
 discipline they already carry. Whether the declaring text moves here is Q4.
 It does not settle the questions the declarations leave open. Tags: [HYPER]
@@ -14,7 +14,7 @@ Tyler's proposal, [FRAME] the finite executable reading, [OPEN] unresolved,
 ## What this field owns, and what it cites
 
 Hyperreality owns **reality presentations** and the
-**classification/containment discipline** for realities and sempiternality.
+**classification/containment discipline** for realities and sempiternity.
 The **kind taxonomy** is declared today in hyperethics L3. This field lists
 the kinds by name, each with its source, and cites L3 for the declaration.
 Whether the taxonomy itself moves here is Q4.
@@ -61,21 +61,22 @@ declared, sourced entry. It cannot be reintroduced silently.
 [FRAME] `Classification(member, class)` is **is-a**. `Containment(container,
 member)` is **is-in**. A classification never places anything in a
 container, and a containment never classifies anything. Tyler's 2026-09-26
-statement makes sempiternality both the abstract class and the container
-class of the reality kinds. That is exactly why the two relations are held
+statement makes one word, then spelled sempiternality, both the abstract class and the container
+class of the reality kinds. Since 2026-10-05 the class role is the property sempiternality
+and the container role is the object, a sempiternity. That is exactly why the two relations are held
 apart: each role is stated separately and checked separately.
 
 A `Whole` is an instance of a class that is not itself a reality kind, such
-as one sempiternality.
+as one sempiternity.
 
 ## The direction question, as a finite witness
 
-[HYPER] On 2026-09-26, sempiternality contains realities. On 2026-09-29, a
-base-reality expands to obtain a sempiternality inside itself.
+[HYPER] On 2026-09-26, a sempiternity contains realities. On 2026-09-29, a
+base-reality expands to obtain a sempiternity inside itself.
 
 [FORM] The tests show what each reading costs, without choosing:
 
-- **Two distinct sempiternality wholes.** One contains base-reality `b1`,
+- **Two distinct sempiternity wholes.** One contains base-reality `b1`,
   and `b1` contains the other. Both statements hold together, and
   containment stays well-founded.
 - **One and the same whole.** If it both contains and is contained by `b1`,
@@ -102,9 +103,9 @@ grid". Nothing here assumes uniqueness.
 1. Is base-reality one N-d universal base, or many in a grid? And is our 4D
    reality itself a base-reality, or only, in the 09-23 words, "the 4D
    projection of possibility reality"?
-2. Does sempiternality contain base-reality (09-26), does a base-reality
-   contain a sempiternality (09-29), or do both hold at different levels?
-3. Which field owns sempiternality and universempiternality: this one or
+2. Does a sempiternity contain base-reality (09-26), does a base-reality
+   contain a sempiternity (09-29), or do both hold at different levels?
+3. Which field owns sempiternity and universempiternity: this one or
    Hyperstructure?
 4. Should the kind declarations stay in hyperethics L3, with this field
    citing them, or move here? Hyperethics imports no other field: its
@@ -126,7 +127,7 @@ grid". Nothing here assumes uniqueness.
 8. Should the declared claim that our universe is a simulation live here, as
    a declared and unadjudicated claim?
 9. Another draft in the family uses "hyperreality" as a second name for
-   universempiternality. Is universempiternality this field's subject, one
+   universempiternity. Is universempiternity this field's subject, one
    subject within it, or a different thing that should keep its own name?
 10. What is hypergeometric reality? It is recorded as proposed, and no
     public definition exists. Its relation to the Hypergeometry field is
