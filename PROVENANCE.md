@@ -257,3 +257,11 @@ Recorded as given. Intent, not evidence.
 > So you get an instant computation machine because the internal nulltime is decidable instantly and by changing the outside the insides beginning and only point of computation occurs instantly in nulltime
 
 Analysis in hyperphysics `docs/research/TIME_BUBBLE_SHEET.md`: interior time is zero, exterior time is not. `[OPEN]`
+
+## 2026-10-06: sempiternity's rules operate hyperlogically (USER-STATED)
+
+Recorded as given. Intent, not evidence.
+
+> sempiternitys rules then operate hyperlogically
+
+Analysis in hyperphysics `docs/research/TIME_BUBBLE_SHEET.md`: the interior's step-by-step structure has the shape of a derivation chain (energy equals total violation of derivation steps), which is hyperlogic's and hypermath's subject. `[OPEN]` Whether the rules are hyperlogic's L0 triangle; L0 itself claims to be no logic.
