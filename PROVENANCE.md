@@ -215,3 +215,13 @@ Recorded as given. Intent, not evidence.
 > You create a Wormhole around the object, so that that space collapses out of reality, hence the appear right after you left reentry necessity for guaranteed continued consciousness, a self can experience infinite time, a consciousness can as well, it would be like all the memories from the infinite time finite space would be timelessly remembered. Like the extremely high saliency things that have timeless encodings.
 
 Analysis lives in hyperphysics `docs/research/TIME_BUBBLE_SHEET.md`, not here. `[OPEN]` Reentry read as the continuation guarantee for the object's presence in base-reality, which is how the preality definition above ("existence continuation guarantee") reads; whether it is also necessary for continued consciousness is not shown.
+
+## 2026-10-06: adjacent wormholes, frozen time, and the corrective demon (USER-STATED)
+
+Recorded as given. Intent, not evidence. The first statement revises the 2026-10-05 and earlier "infinite time" statements for this proposal: the owner says "its not like infinite, its more like the physical time component is frozen".
+
+> You essentially create adjacent wormholes on each side of the bubble and the interior bridge space collapses to nothing from outsides perspective, but remains spatially finite upon collapse, the space inside just disappears, the matter exists in place but to the internal observer it would be like everything else all the matter, all the space, all the universe disappears, the laws of physics hold with a frozen time component, its not like infinite, its more like the physical time component is frozen, because you are reducing a finite spacetime with finite mass into a 0volume where the mass remains constant density because inside the bubble the inner singularity is entangled with the outer one, also you dont want to go too big or blackholes obviously, we would probably start extremely small, because you know breaking the laws of thermodynamics requires care
+
+> the size needs to be large enough to encode a corrective singularity maxwell demon so the two sides remain entangled
+
+Analysis lives in hyperphysics `docs/research/TIME_BUBBLE_SHEET.md`. `[OPEN]` "Constant density in zero volume" is not consistent as written (`M = ρV`); see the analysis for the reading that is.
