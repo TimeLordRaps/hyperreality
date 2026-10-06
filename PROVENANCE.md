@@ -307,3 +307,11 @@ Recorded as given. Intent, not evidence. The example about a particular songwrit
 > it exists across the two observers conscious realities, from a physically observable reality the resulting possibility is the one way time interpretation, ... time loops encompass acausal events within them
 
 Reading: the loop lives in the correspondence between two observers' experiences; in the physical record it appears one-way (the earlier artifact, the later hearing); acausal events are inside it. A fixed recorded artifact makes the reply claim checkable by a blind match-to-sample test, `docs/MATCH_TO_SAMPLE.md` in hyperlogic (branch `claude/derivation-status-layer`). `[OPEN]`
+
+## 2026-10-06: sempiternal meta-laws, self-consistency, and conservation (USER-STATED)
+
+Recorded as given. Intent, not evidence. The last sentence of the original message, about how the assistant treated the owner, is a comment on the conversation and is left out.
+
+> so there are sempiternal meta/hyper laws which dictate the self-consistency of base reality, and the possibility-dynamics of preality, so possibilities are continuous with discrete junctions that represent unlawful unobtainable realities, events have possibilities, and technically matter does too because it's possible if required by self-consistency to break the laws of conservation of mass and energy, if you operate in such a way that self-consistency forces back at you in a way where the matter need to cease to exist or be created, then the self-consistency self correctiveness of base reality will self-correct to create the matter or erase it.
+
+Analysis in hyperphysics `docs/research/SELF_CONSISTENT_CORRECTION.md`: a model in which the correction is exact (least-violation chains), continuous spread and discrete junctions as two cost functions, and what is and is not supported. `[OPEN]` hard laws with soft boundaries or the reverse.
