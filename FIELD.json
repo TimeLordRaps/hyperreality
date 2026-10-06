@@ -21,7 +21,15 @@
     "control_position",
     "control_prerequisites",
     "controlled_before",
-    "order_is_declared"
+    "order_is_declared",
+    "Counterpart",
+    "KINDS_WITH_ATEMPORAL_COUNTERPART",
+    "SIMULABLE_IN_AREALITY",
+    "OBTAINABLE_FROM_PREALITY",
+    "areality_can_simulate",
+    "atemporal_of",
+    "temporal_of",
+    "counterpart_law_violations"
   ],
   "scope": "What a reality is and which kinds of reality are declared: an open kind list in the owner's control order, presentations of those kinds, and classification kept separate from containment.",
   "exclusions": [
@@ -31,7 +39,7 @@
     "Observability belongs to Hyperspace and order to Hypertime; neither is defined here.",
     "No physical, cosmological, or simulation claim is established.",
     "The owner's control order (2026-10-05) is encoded as CONTROL_ORDER; whether oreality is around or within hypergeometric reality, and the direction of the inherits/supports arrows, are open.",
-    "No counterpart relation is expressed; the registry has only is-a and is-in.",
+    "Counterparts are a third relation, never read as is-a or is-in; the counterpart cells the owner has not stated (temporal preality; hypergeometric reality and oreality) are not filled.",
     "No physical, anchoring, or bubble claim is established; the cat-map toy checks a finite computation only."
   ],
   "verifier_status": "NOT_CHECKED"

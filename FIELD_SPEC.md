@@ -125,9 +125,16 @@ different levels.
 |---|---|---|
 | surreality | first-person dreaming | dream architecting |
 | preality | not stated | the laws of base realities, including time and retrocausality, in representable form |
-| base-reality | an instantiation, at one time, of the observable physical laws | not stated |
+| base-reality | an instantiation, at one time, of the observable physical laws | the nullspace of a nulltime device, where the matter "goes", not translational at all, technically within sempiternity (2026-10-06) |
+| areality | not stated | exists (2026-10-06: "atemporal versions of base-reality, areality, ... all exist"); content not stated |
 
-[OPEN] Two cells are not stated, and areality is not mentioned. [FORM] The registry has two relations, is-a and is-in, and no way to say "counterpart of". The table is not expressible here and is not encoded. Reading it as is-a or is-in would break the rule that the two relations are never inferred from each other (HR-014, HR-015).
+[HYPER] On 2026-10-06 the owner said atemporal versions of the kinds all exist and can be made to exist from all base-realities, and that this is one of the laws the possibility space of preality must abide by. [FORM] Encoded 2026-10-06: `Counterpart(temporal_id, atemporal_id)` is a third relation, separate from is-a and is-in (`tests/test_counterparts_and_simulation.py`): both ends are presented realities of the same kind, each reality has at most one atemporal counterpart and each is the counterpart of at most one, and nothing is inferred from sharing a kind or a container. `counterpart_law_violations` reports, for each reality of base-reality, surreality, areality or preality, a missing atemporal counterpart or one that is not within a sempiternity; it reports and does not enforce. [OPEN] The temporal preality cell is still not stated. "..." in the owner's list is not read as covering hypergeometric reality or oreality, which are therefore not required to have counterparts (HR-015). The 2026-10-05 table above stays as recorded.
+
+## Simulation and access (2026-10-06)
+
+[HYPER] The owner: areality is a purely symbolic representation of the foundational laws that define base-reality, surreality, preality, hypergeometric reality and oreality; it is why digital and virtual representation exists in this reality (arbitrary bitstrings in a CPU standing for operations through circuits are abstractions operating in areality). All kinds below sempiternity can be simulated in an areality device, including the instant (nulltime) computations, within the constraints they require, and unprovably indifferent from base-reality. From preality simulations base-reality and surreality are obtainable: simulating every definable law-abiding universe defines the accessible imagination space of each, which is surreality. Sempiternity is definable because it is a composable structure and differs by being the categorical containing composition of all other kinds; access to it requires a true base-reality nulltime instantaneous computation setup.
+
+[FORM] Encoded: `SIMULABLE_IN_AREALITY` is every kind below sempiternity in `CONTROL_ORDER`, areality included; `areality_can_simulate("sempiternity")` and of universempiternity are false; `OBTAINABLE_FROM_PREALITY = (base-reality, surreality)`. Simulation is a relation on kinds, **distinct from the control order**: preality is above areality in control (areality must be controlled first), yet an areality device simulates it, because representing something is not controlling it. It is neither containment nor classification, and no function named for it is exported (tested). [OPEN] Whether "unprovably indifferent" means observational bisimilarity or only that no observer can prove a difference (the owner's 2026-10-04 wording, "indistinguishibly disprovable", read as a typo for this); whether universempiternity is simulable, and whether sempiternity's "categorical containing composition" is the join (least containing structure) in containment, are not encoded (HR-022, HR-023).
 
 ## Order among the realities
 
@@ -198,7 +205,7 @@ grid". Nothing here assumes uniqueness.
     hypergeometric reality or within it?
 
 11. Is the reading of "inherits upward and supports from underneath" the intended one: inherits-from pointing up, supports given by the lower kind to the higher? Which kind is the source of each?
-12. What are the two unstated counterpart cells (preality temporal, base-reality atemporal), and where does areality sit in the counterpart structure?
+12. The base-reality atemporal cell and areality are now stated (2026-10-06). What is the temporal preality cell, and what are the counterparts of hypergeometric reality and oreality, if any?
 13. Is the owner's mapping to reality classes classification only, or is there an order between kinds? What is the order, and is it on kinds or on realities?
 14. Is the anchored enclosure "the sempiternality" and its interior "sempiternity", or is that a different use of the words?
 15. Does "universempiternality" name the property of a universempiternity, and is the temporal sense of universempiternity unbounded?

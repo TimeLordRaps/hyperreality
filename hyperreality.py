@@ -102,12 +102,27 @@ class Containment:
 
 
 @dataclass(frozen=True)
+class Counterpart:
+    """temporal_id and atemporal_id present the same kind of reality, one with and one
+    without a time of its own. A third relation, never read as is-a or is-in (HR-014)."""
+    temporal_id: str
+    atemporal_id: str
+
+    def __post_init__(self) -> None:
+        _token(self.temporal_id, "temporal id")
+        _token(self.atemporal_id, "atemporal id")
+        if self.temporal_id == self.atemporal_id:
+            raise ValueError("an identity is not its own counterpart")
+
+
+@dataclass(frozen=True)
 class Registry:
     kinds: tuple
     presentations: tuple
     wholes: tuple = ()
     classifications: tuple = ()
     containments: tuple = ()
+    counterparts: tuple = ()
 
     def __post_init__(self) -> None:
         _bounded(self.kinds, Kind, "kinds")
@@ -115,6 +130,7 @@ class Registry:
         _bounded(self.wholes, Whole, "wholes")
         _bounded(self.classifications, Classification, "classifications")
         _bounded(self.containments, Containment, "containments")
+        _bounded(self.counterparts, Counterpart, "counterparts")
         names = [k.name for k in self.kinds]
         if len(names) != len(set(names)):
             raise ValueError("kind names must be distinct")
@@ -135,6 +151,17 @@ class Registry:
             raise ValueError("classifications must not repeat")
         if len(set(self.containments)) != len(self.containments):
             raise ValueError("containments must not repeat")
+        kind_of = {p.reality_id: p.kind for p in self.presentations}
+        for c in self.counterparts:
+            for end in (c.temporal_id, c.atemporal_id):
+                if end not in kind_of:
+                    raise ValueError(f"counterpart endpoint {end!r} must be a presented reality")
+            if kind_of[c.temporal_id] != kind_of[c.atemporal_id]:
+                raise ValueError("counterparts present the same kind of reality")
+        if len({c.temporal_id for c in self.counterparts}) != len(self.counterparts):
+            raise ValueError("a reality has at most one atemporal counterpart")
+        if len({c.atemporal_id for c in self.counterparts}) != len(self.counterparts):
+            raise ValueError("a reality is the atemporal counterpart of at most one reality")
 
 
 def resolve_kind(reg: Registry, name: str) -> Kind:
@@ -242,3 +269,63 @@ def order_is_declared(kinds=DECLARED_KINDS) -> bool:
     """True when CONTROL_ORDER lists every declared kind exactly once."""
     names = [k.name for k in kinds]
     return sorted(names) == sorted(CONTROL_ORDER) and len(set(CONTROL_ORDER)) == len(CONTROL_ORDER)
+
+
+# --- Counterparts, simulation and access (USER-STATED 2026-10-05 and 2026-10-06) -----------
+
+# Kinds the owner says have an atemporal counterpart: surreality, preality, base-reality
+# (2026-10-05) and areality (2026-10-06, "atemporal versions of base-reality, areality, ...").
+# Hypergeometric reality and oreality are covered only by the "...", so they are not listed.
+KINDS_WITH_ATEMPORAL_COUNTERPART = ("base-reality", "surreality", "areality", "preality")
+
+# Kinds the owner says an areality device can simulate: all lower orders than sempiternity.
+# Representation is not control: this is a different relation from CONTROL_ORDER.
+SIMULABLE_IN_AREALITY = CONTROL_ORDER[:control_position("sempiternity")]
+
+# Kinds obtainable from preality simulations (2026-10-06): base-reality, and surreality as
+# the accessible imagination spaces of each simulated law-abiding universe.
+OBTAINABLE_FROM_PREALITY = ("base-reality", "surreality")
+
+
+def areality_can_simulate(kind: str) -> bool:
+    """True for every kind below sempiternity in CONTROL_ORDER, including areality itself.
+    Sempiternity and above are not simulated; access to sempiternity is by a nulltime
+    device (2026-10-06). KeyError for a kind with no place in the order."""
+    control_position(kind)
+    return kind in SIMULABLE_IN_AREALITY
+
+
+def atemporal_of(reg: Registry, identity: str):
+    """The declared atemporal counterpart of identity, or None. Nothing is inferred."""
+    for c in reg.counterparts:
+        if c.temporal_id == identity:
+            return c.atemporal_id
+    return None
+
+
+def temporal_of(reg: Registry, identity: str):
+    """The declared temporal counterpart of identity, or None."""
+    for c in reg.counterparts:
+        if c.atemporal_id == identity:
+            return c.temporal_id
+    return None
+
+
+def counterpart_law_violations(reg: Registry) -> tuple:
+    """The preality law of 2026-10-06: atemporal versions of the listed kinds exist for
+    every reality of those kinds, and they lie within a sempiternity (the nullspace is
+    technically sempiternity). Returns (reality_id, reason) pairs; empty means the law holds
+    in this registry. Reported, not enforced: a registry that violates it is representable."""
+    sempiternities = {w.whole_id for w in reg.wholes if w.class_name == "sempiternality"}
+    out = []
+    for p in reg.presentations:
+        if p.kind not in KINDS_WITH_ATEMPORAL_COUNTERPART:
+            continue
+        if temporal_of(reg, p.reality_id) is not None:
+            continue  # it is itself an atemporal counterpart
+        twin = atemporal_of(reg, p.reality_id)
+        if twin is None:
+            out.append((p.reality_id, "no atemporal counterpart"))
+        elif not (containers_of(reg, twin) & sempiternities):
+            out.append((p.reality_id, "atemporal counterpart is not within a sempiternity"))
+    return tuple(out)

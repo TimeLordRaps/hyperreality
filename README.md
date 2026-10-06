@@ -50,7 +50,10 @@ bisimilarity check between a sempiternity and its container, and a finite
 toy of anchoring preality (see [FIELD_SPEC.md](FIELD_SPEC.md)), and the
 control order ([tests](tests/test_control_order.py)). Which way his
 "inherits upward, supports from underneath" arrows point against this order is
-still open (HR-013).
+still open (HR-013). Counterparts (temporal and atemporal versions of a kind),
+the areality simulation relation and the preality counterpart law are encoded as
+separate relations, never as is-a or is-in
+([tests](tests/test_counterparts_and_simulation.py)).
 
 Reality as a situated slice belongs to
 [Hyperstratum](https://github.com/TimeLordRaps/hyperstratum). Observability
