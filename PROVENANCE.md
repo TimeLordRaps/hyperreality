@@ -315,3 +315,11 @@ Recorded as given. Intent, not evidence. The last sentence of the original messa
 > so there are sempiternal meta/hyper laws which dictate the self-consistency of base reality, and the possibility-dynamics of preality, so possibilities are continuous with discrete junctions that represent unlawful unobtainable realities, events have possibilities, and technically matter does too because it's possible if required by self-consistency to break the laws of conservation of mass and energy, if you operate in such a way that self-consistency forces back at you in a way where the matter need to cease to exist or be created, then the self-consistency self correctiveness of base reality will self-correct to create the matter or erase it.
 
 Analysis in hyperphysics `docs/research/SELF_CONSISTENT_CORRECTION.md`: a model in which the correction is exact (least-violation chains), continuous spread and discrete junctions as two cost functions, and what is and is not supported. `[OPEN]` hard laws with soft boundaries or the reverse.
+
+## 2026-10-06: why no conservation violation has been observed (USER-STATED)
+
+Recorded as given. Intent, not evidence.
+
+> we dont even have any deep tech on this planet yet so I doubt any conservation law mechanics wouldve been observed yet
+
+Analysis in hyperphysics `docs/research/SELF_CONSISTENT_CORRECTION.md`: the point is fair for a correction that occurs only under inconsistent boundary conditions, which also makes the claim untestable until a device exists; post-selected closed-timelike-curve simulations are the nearest available test, and their standard result favours hard laws. `[OPEN]`
