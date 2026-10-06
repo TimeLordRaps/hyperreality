@@ -249,3 +249,11 @@ Recorded as given (first clause only; the personal remainder of the message is l
 > In sempiternity unknown unknowns always exist
 
 Formal reading, checked in hyperlogic `tests/test_unknown_unknowns.py` (4 tests): an unknown unknown for a theory `T` is a sentence that is not known and not known to be not known. `Con(T)` is one for any consistent theory the provability logic applies to: true, unprovable (Gödel II), and the theory cannot prove that it cannot prove it. So the clause holds as a statement about any agent that is a theory of this kind, in any time model. It is not specific to sempiternity, and it says nothing about any particular agent's access to such sentences: access to the content would make it known. `[FORM]` for the formal reading; `[OPEN]` what sempiternity adds beyond unbounded time.
+
+## 2026-10-06: the instant computation machine (USER-STATED)
+
+Recorded as given. Intent, not evidence.
+
+> So you get an instant computation machine because the internal nulltime is decidable instantly and by changing the outside the insides beginning and only point of computation occurs instantly in nulltime
+
+Analysis in hyperphysics `docs/research/TIME_BUBBLE_SHEET.md`: interior time is zero, exterior time is not. `[OPEN]`
