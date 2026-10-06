@@ -329,3 +329,28 @@ def counterpart_law_violations(reg: Registry) -> tuple:
         elif not (containers_of(reg, twin) & sempiternities):
             out.append((p.reality_id, "atemporal counterpart is not within a sempiternity"))
     return tuple(out)
+
+
+# Kinds for which the owner says the atemporal counterpart encompasses the temporal one
+# (2026-10-06, for preality: "atemporal preality obviously encompasses preality"). Stated for
+# preality only; it is not generalised to the other kinds.
+ATEMPORAL_ENCOMPASSES_TEMPORAL = ("preality",)
+
+
+def atemporal_encompasses(reg: Registry, atemporal_id: str, temporal_id: str) -> bool:
+    """True when `atemporal_id` is the declared atemporal counterpart of `temporal_id` and their
+    kind is one the owner states the atemporal version encompasses. A separate relation: it is
+    neither is-in nor is-a, and it is not inferred from containment."""
+    if atemporal_of(reg, temporal_id) != atemporal_id:
+        return False
+    kinds = {p.reality_id: p.kind for p in reg.presentations}
+    return kinds[temporal_id] in ATEMPORAL_ENCOMPASSES_TEMPORAL
+
+
+def simulable_in_areality(reg: Registry, identity: str) -> bool:
+    """Whether a presented reality can be simulated in an areality device: its kind is below
+    sempiternity (an atemporal counterpart presents the same kind as its temporal one)."""
+    for p in reg.presentations:
+        if p.reality_id == identity:
+            return areality_can_simulate(p.kind)
+    raise KeyError(identity)

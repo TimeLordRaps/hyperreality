@@ -2,12 +2,12 @@
 import unittest
 
 import hyperreality
-from hyperreality import (CONTROL_ORDER, DECLARED_KINDS, KINDS_WITH_ATEMPORAL_COUNTERPART,
+from hyperreality import (ATEMPORAL_ENCOMPASSES_TEMPORAL, CONTROL_ORDER, DECLARED_KINDS, KINDS_WITH_ATEMPORAL_COUNTERPART,
                           OBTAINABLE_FROM_PREALITY, SIMULABLE_IN_AREALITY, Classification,
                           Containment, Counterpart, Presentation, Registry, Whole,
                           areality_can_simulate, atemporal_of, classes_of, containers_of,
-                          control_position, counterpart_law_violations, members_of,
-                          temporal_of)
+                          atemporal_encompasses, control_position, counterpart_law_violations,
+                          members_of, simulable_in_areality, temporal_of)
 
 PRES = (Presentation("b1", "base-reality"), Presentation("b1-null", "base-reality"),
         Presentation("a1", "areality"), Presentation("a1-null", "areality"),
@@ -132,6 +132,37 @@ class SimulationTests(unittest.TestCase):
         r = Registry(DECLARED_KINDS, PRES, WHOLES)
         self.assertEqual(containers_of(r, "p1"), frozenset())
         self.assertEqual(classes_of(r, "p1"), frozenset())
+
+
+class EncompassingTests(unittest.TestCase):
+    def test_atemporal_preality_encompasses_preality(self):
+        self.assertTrue(atemporal_encompasses(reg(), "p1-null", "p1"))
+        self.assertEqual(ATEMPORAL_ENCOMPASSES_TEMPORAL, ("preality",))
+
+    def test_not_generalised_to_other_kinds(self):
+        for temporal, atemporal in (("b1", "b1-null"), ("a1", "a1-null"), ("s1", "s1-null")):
+            self.assertFalse(atemporal_encompasses(reg(), atemporal, temporal))
+
+    def test_direction_and_declaration_matter_negative_controls(self):
+        self.assertFalse(atemporal_encompasses(reg(), "p1", "p1-null"))      # reversed
+        self.assertFalse(atemporal_encompasses(reg(counterparts=(), containments=()), "p1-null", "p1"))
+        self.assertFalse(atemporal_encompasses(reg(), "a1-null", "p1"))      # not its counterpart
+
+    def test_encompassing_is_not_containment_or_classification(self):
+        r = reg()
+        self.assertEqual(containers_of(r, "p1"), containers_of(reg(counterparts=()), "p1"))
+        self.assertEqual(members_of(r, "p1-null"), frozenset())
+        self.assertEqual(classes_of(r, "p1-null"), frozenset())
+
+    def test_atemporal_preality_is_simulable_in_areality(self):
+        self.assertTrue(simulable_in_areality(reg(), "p1"))
+        self.assertTrue(simulable_in_areality(reg(), "p1-null"))
+        with self.assertRaises(KeyError):
+            simulable_in_areality(reg(), "S")   # a Whole is not a presented reality
+
+    def test_a_sempiternity_presentation_is_not_simulable_negative_control(self):
+        r = reg(presentations=PRES + (Presentation("seq", "sempiternity"),))
+        self.assertFalse(simulable_in_areality(r, "seq"))
 
 
 if __name__ == "__main__":

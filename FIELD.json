@@ -29,7 +29,10 @@
     "areality_can_simulate",
     "atemporal_of",
     "temporal_of",
-    "counterpart_law_violations"
+    "counterpart_law_violations",
+    "ATEMPORAL_ENCOMPASSES_TEMPORAL",
+    "atemporal_encompasses",
+    "simulable_in_areality"
   ],
   "scope": "What a reality is and which kinds of reality are declared: an open kind list in the owner's control order, presentations of those kinds, and classification kept separate from containment.",
   "exclusions": [
