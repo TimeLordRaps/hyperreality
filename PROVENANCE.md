@@ -233,3 +233,11 @@ Recorded as given. Intent, not evidence.
 > with provenly incorrigible mechanisms that hold indefinitely by design, because it will be like the space from the outside jumps to the end of expansion, so once again extreme care is required for one an incorrigble device and 2 because bending the laws of physics to these degrees is dangerous
 
 Analysis, including what "provably indefinite" can and cannot mean, is in hyperphysics `docs/research/TIME_BUBBLE_SHEET.md`. `[OPEN]` This connects to the owner's 2026-10-04 statement that a preality device is one "you can build a device to establish the existence continuation guarantee of, like corrigibility" and to hyperethics' ground; neither is resolved here.
+
+## 2026-10-06: the interior demon is the computation (USER-STATED)
+
+Recorded as given. Intent, not evidence. It corrects the reading of the preceding frozen-time and demon statements (a separate demon) to: the demon and the computation are one.
+
+> No the interior core's maxwell demon is the computation, its tied to the external side, so somehow real time and I suppose null time being entangled allows 1 reconfiguration of the internal computations, and 2. maintenance of both sides incorrigibly.
+
+Analysis in hyperphysics `docs/research/TIME_BUBBLE_SHEET.md`. `[OPEN]` "Null time" read as the interior's frozen sector; the owner to confirm.
