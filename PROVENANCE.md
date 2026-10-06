@@ -323,3 +323,11 @@ Recorded as given. Intent, not evidence.
 > we dont even have any deep tech on this planet yet so I doubt any conservation law mechanics wouldve been observed yet
 
 Analysis in hyperphysics `docs/research/SELF_CONSISTENT_CORRECTION.md`: the point is fair for a correction that occurs only under inconsistent boundary conditions, which also makes the claim untestable until a device exists; post-selected closed-timelike-curve simulations are the nearest available test, and their standard result favours hard laws. `[OPEN]`
+
+## 2026-10-06: where conservation sits among the laws (USER-STATED)
+
+Recorded as given. Intent, not evidence. The last sentence of the original message is a remark about the owner and is left out.
+
+> I agree that the conservation is a law, but where on law ranking does it go, what other laws do we have, we assume they are all absolute, but some take priority in resolution, like one dominant model of laws over another, and all the laws have whole-forms above them that represents them all orderly
+
+Analysis in hyperphysics `docs/research/LAW_RANKING.md`: a ranking by dependence (consistency, symmetry, conservation, dynamics, statistical laws), precedents where conservation yields to a higher structure, an exact anomaly-cancellation check, and the symmetry group as the literal whole-form. `[OPEN]` whether the owner's meta-law is a consistency requirement or something above all tiers.
