@@ -299,3 +299,11 @@ Recorded as given. Intent, not evidence. The remainder of the message is a state
 > a time loop can exist in our base reality through possibility events where the event had the possibility of occurring at two points simultaneously for two different observers, example a songwriter writing their song and me listening to it
 
 Analysis, and the claim's testable form, in this record's neighbours: hyperphysics `docs/research/POSSIBILITIES_AND_SUPERPOSITIONS.md` (two-boundary description: statistics, not a loop) and hyperlogic `src/hyperlogic/ledger.py` (commit-before-outcome predictions). `[OPEN]` Whether the songwriter and listener are one event with two tokens (no loop needed) or an event whose later token is a cause of the earlier one (a loop).
+
+## 2026-10-06: where the time loop exists (USER-STATED, structural sentences only)
+
+Recorded as given. Intent, not evidence. The example about a particular songwriter and the owner's own listening is left out, as a statement about a person and an experience.
+
+> it exists across the two observers conscious realities, from a physically observable reality the resulting possibility is the one way time interpretation, ... time loops encompass acausal events within them
+
+Reading: the loop lives in the correspondence between two observers' experiences; in the physical record it appears one-way (the earlier artifact, the later hearing); acausal events are inside it. A fixed recorded artifact makes the reply claim checkable by a blind match-to-sample test, `docs/MATCH_TO_SAMPLE.md` in hyperlogic (branch `claude/derivation-status-layer`). `[OPEN]`
