@@ -291,3 +291,11 @@ Recorded as given. Intent, not evidence.
 > possibility events act as bootstrap tenet points across physical laws, so as realities evolve their physical laws can be modified from inside of them, its how we prevent a great freeze, which I believe is my current best foresighted prediction of how this base reality ends, but Im open to other interpretations
 
 Analysis in hyperphysics `docs/research/END_OF_BASE_REALITY.md`: the Big Freeze is the default expectation and not contradicted by anything retrieved, with the 2026 dark-energy data the live empirical question; law modification from inside breaks energy conservation (Noether), which is both the lever and the danger. `[OPEN]` Whether modification can supply gradients without end.
+
+## 2026-10-06: time loops through possibility events (USER-STATED, first sentence only)
+
+Recorded as given. Intent, not evidence. The remainder of the message is a statement about the owner's own experience and is left out here; the owner can add it.
+
+> a time loop can exist in our base reality through possibility events where the event had the possibility of occurring at two points simultaneously for two different observers, example a songwriter writing their song and me listening to it
+
+Analysis, and the claim's testable form, in this record's neighbours: hyperphysics `docs/research/POSSIBILITIES_AND_SUPERPOSITIONS.md` (two-boundary description: statistics, not a loop) and hyperlogic `src/hyperlogic/ledger.py` (commit-before-outcome predictions). `[OPEN]` Whether the songwriter and listener are one event with two tokens (no loop needed) or an event whose later token is a cause of the earlier one (a loop).
