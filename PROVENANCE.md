@@ -225,3 +225,11 @@ Recorded as given. Intent, not evidence. The first statement revises the 2026-10
 > the size needs to be large enough to encode a corrective singularity maxwell demon so the two sides remain entangled
 
 Analysis lives in hyperphysics `docs/research/TIME_BUBBLE_SHEET.md`. `[OPEN]` "Constant density in zero volume" is not consistent as written (`M = ρV`); see the analysis for the reading that is.
+
+## 2026-10-06: incorrigible mechanisms and the jump to the end of expansion (USER-STATED)
+
+Recorded as given. Intent, not evidence.
+
+> with provenly incorrigible mechanisms that hold indefinitely by design, because it will be like the space from the outside jumps to the end of expansion, so once again extreme care is required for one an incorrigble device and 2 because bending the laws of physics to these degrees is dangerous
+
+Analysis, including what "provably indefinite" can and cannot mean, is in hyperphysics `docs/research/TIME_BUBBLE_SHEET.md`. `[OPEN]` This connects to the owner's 2026-10-04 statement that a preality device is one "you can build a device to establish the existence continuation guarantee of, like corrigibility" and to hyperethics' ground; neither is resolved here.
